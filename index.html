@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script src="signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <h1>Sign Up Form</h1>
+            <hr style="color: crimson; border: 1px solid rgb(146, 178, 184); width: 90%;">
+            <h2>Student Form</h2>
+            <form class="form-container" action="" method="" name="stud_form" onsubmit="return validate()" >
+                <table cellPadding="08px" border="0px">
+                    <tr>
+                        <td>
+                            <label for="">Name: </label> 
+                        </td>
+                        <td>
+                            <input id="input" type="text" name="name" id="name" onblur="validateString(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Mobile: </label> 
+                        </td>
+                        <td>
+                            <input id="input" type="text" name="mobile" id="email" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Email: </label> 
+                        </td>
+                        <td>
+                            <input id="input" type="text" name="email" onblur="validateEmail(this.id)">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Gender: </label> 
+                        </td>
+                        <td Align="center" >
+                            <input id="gender-radio" type="radio" name="gender" value="Male" > Male
+                            <input id="gender-radio" type="radio" name="gender" value="Female"> Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Course: </label> 
+                        </td>
+                        <td  Align="center">
+                            <select id="course" name="course" id="">
+                                <option value="">Select</option>
+                                <option value=""> HTML</option>
+                                <option value="">CSS</option>
+                                <option value="">JAVASCRIPT</option>
+                            </select>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Select Program: </label> 
+                        </td>
+                        <td>
+                            <input type="checkbox" name="program">BSSE
+                            <input type="checkbox" name="program">BSCS
+                            <input type="checkbox" name="program">BSAI
+                        </td>
+                    </tr>
+                   <tr >
+                       <td colspan="2" Align="center" >
+                            <input id="button" type="submit" name="submit" value="SUBMIT">
+                            <input id="button" type="reset" name="reset" value="RESET">
+                       </td>
+                   </tr>
+                </table>
+                
+            </form>
+        
+            
+            </div>
+    </div>
+    
+    
+</body>
+</html>
